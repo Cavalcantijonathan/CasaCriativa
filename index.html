@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--Tag Html-->
+
+<head>
+    <!--Responsavel por receber as configurações pagina-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Criativa</title>
+    
+    <link rel="stylesheet" href="/estilos/style.css"> <!--Linkando o CSS-->   
+
+</head>
+
+<body>
+    <img src="/images/Logo.png" alt="Logo Casa Criativa">
+    <p>
+        Ficar em casa em períodos longos, não deve ser nada fácil.
+    </p>
+    <p>
+        Iremos catalogar ideias,<strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for
+        necessário para
+        tornar esse momento mais interessante.
+    </p>
+    <p>
+        Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicioando a sua ideia.
+    </p>
+
+    <button>+Adicionar Ideia</button>
+    <!--Class podemos repetir em varios momentos-->
+    <button class="fat">Ver Ideias</button>
+
+
+    <p id="footer">Com a🚀<a href="http://rocketseat.com.br" target="_blank">Rocktseat</a></p>
+
+    <script>
+
+        document
+            .querySelector("button.fat") // Buscanto do botão da class fat
+            .addEventListener("click", function () {
+                document
+                    .querySelector("#footer") // Função para fazer sumir e aprecer o Footer
+                    .classList
+                    .toggle("hide")
+            }) // Gerando um ouvidor de eventos "gatilho" apos o clique.
+
+    </script>
+
+</body>
+
+</html>
