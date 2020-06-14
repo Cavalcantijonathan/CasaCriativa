@@ -1,8 +1,54 @@
+/*
+Box
+Conteudo da Caixa
+Preenchimento
+Espaçamentos 
+Posicionamentos 
+Bordas
+largura
+altura
+
+
+obs: Ex. body #container  / #container - A primeira tem mais força na cascata sendo assim será a definida.
+
+*/
 
 body {
     background-color: #e5e5e5;
     color: #25282b;
-    text-align: center;
+    
+
+    margin: 0;
+}
+
+#container {
+    width: 80%;
+    max-width: 980px; /* largura conteudo*/
+
+    margin-right: auto; /*Margens*/
+    margin-left: auto;
+
+    display: flex;
+
+}
+
+#intro {
+    width: 300px;
+
+    margin-right: 20px;
+}
+
+main {
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+#buttons {
+    display: flex;
+
+    justify-content:space-evenly; /* Espaçamento de conteudo */
+
+    margin-bottom: 32px;
 }
 
 button {
@@ -15,12 +61,18 @@ button {
     background-color: unset;
 }
 
+footer {
+    text-align: center;
+    
+}
+
 .fat {
     color: white;
     background-color: #ff5e84;
 }
 
-#footer a {
+
+footer a {
     color: #25282b;
     text-decoration: none;
 }

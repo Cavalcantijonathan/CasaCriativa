@@ -7,45 +7,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Criativa</title>
-    
-    <link rel="stylesheet" href="/estilos/style.css"> <!--Linkando o CSS-->   
+
+    <link rel="stylesheet" href="/estilos/style.css">
+    <!--Linkando o CSS-->
+
 
 </head>
 
 <body>
-    <img src="/images/Logo.png" alt="Logo Casa Criativa">
-    <p>
-        Ficar em casa em períodos longos, não deve ser nada fácil.
-    </p>
-    <p>
-        Iremos catalogar ideias,<strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for
-        necessário para
-        tornar esse momento mais interessante.
-    </p>
-    <p>
-        Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicioando a sua ideia.
-    </p>
 
-    <button>+Adicionar Ideia</button>
-    <!--Class podemos repetir em varios momentos-->
-    <button class="fat">Ver Ideias</button>
+    <div id="container">
+
+        <section id="intro">
+
+            <header>
+                <img src="/images/Logo.png" alt="Logo Casa Criativa">
+            </header>
+            <main>
+                <p>
+                    Ficar em casa em períodos longos, não deve ser nada fácil.
+                </p>
+                <p>
+                    Iremos catalogar ideias,<strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo
+                    que
+                    for
+                    necessário para
+                    tornar esse momento mais interessante.
+                </p>
+                <p>
+                    Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicioando a sua ideia.
+                </p>
+            </main>
+
+            <section id="buttons">
+
+                <button>+Adicionar Ideia</button>
+                <!--Class podemos repetir em varios momentos-->
+                <button class="fat">Ver Ideias</button>
+
+            </section>
+
+            <footer>Com a🚀<a href="http://rocketseat.com.br" target="_blank">Rocktseat</a>
+            </footer>
 
 
-    <p id="footer">Com a🚀<a href="http://rocketseat.com.br" target="_blank">Rocktseat</a></p>
+        </section>
 
-    <script>
+        <section id="last-ideias">
+ 
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2728/2728995.svg" alt="Imagem curso programação">
 
-        document
-            .querySelector("button.fat") // Buscanto do botão da class fat
-            .addEventListener("click", function () {
-                document
-                    .querySelector("#footer") // Função para fazer sumir e aprecer o Footer
-                    .classList
-                    .toggle("hide")
-            }) // Gerando um ouvidor de eventos "gatilho" apos o clique.
+                <div class="content">
+                    <h3>Curso de Programação</h3>
+                    <p>Estudo</p>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corporis fugiat aspernatur
+                        unde aperiam nulla sint, provident asperiores quasi, aliquam culpa nobis, sit labore harum!
+                        Natus dolorum exercitationem eveniet totam.
+                    </div>
+                    <a href="#">Irparaideia</a>
 
-    </script>
+                </div>
+            </div>
 
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2833/2833883.svg" alt="Imagem de Exercicios">
+
+                <div class="content">
+                    <h3>Exercicios</h3>
+                    <p>Saúde</p>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corporis fugiat aspernatur
+                        unde aperiam nulla sint, provident asperiores quasi, aliquam culpa nobis, sit labore harum!
+                        Natus dolorum exercitationem eveniet totam.
+                    </div>
+                    <a href="#">Irparaideia</a>
+
+                </div>
+            </div>
+
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/3048/3048398.svg" alt="Imagem de Meditação">
+
+                <div class="content">
+                    <h3>Meditação</h3>
+                    <p>Mentalidade</p>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corporis fugiat aspernatur
+                        unde aperiam nulla sint, provident asperiores quasi, aliquam culpa nobis, sit labore harum!
+                        Natus dolorum exercitationem eveniet totam.
+                    </div>
+                    <a href="#">irparaideia</a>
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="/script/script.js"></script>
+    <!--Link para Javascript deve ficar no body-->
 </body>
 
 </html>
